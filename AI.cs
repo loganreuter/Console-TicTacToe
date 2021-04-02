@@ -127,11 +127,6 @@ namespace Program
 
             return bestMove;
         }
-
-        static int log2(int n)
-        {
-            return (n == 1) ? 0 : 1 + log2(n / 2);
-        }
         
         //Gathers all of the empty board spaces for the MiniMax algorithm
         private static int[] EmptyIndexes(string[] board){
